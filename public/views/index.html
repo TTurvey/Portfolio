@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    
     <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/typing_animation.css">
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script defer src="index.js" type="module"></script>
+    <script defer src="bio_text_animation.js" type="module"></script>
+    <script defer src="typing_animation.js" type="module"></script>
     
     <title>Portfolio</title>
   </head>
@@ -13,16 +14,26 @@
   <body>
 
     <div class="title">
-      <h1> Hi, I'm Tim Turvey</h1>
+      <h1>Hi, I'm Tim Turvey</h1>
       <p>I'm a software developer and </p>
 
       <div id="intro_text" class="intro_text">
-        <p>...</p>
+        <p></p>
       </div>
-      <h1 id="hidden">I was hidden!</h1>
-    </body>div>
+      <div class="container">
+        <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+      </div>
 
 
+    </div>
+
+    <div class="projects_container">
+      <div class="projects card">
+        Project A
+
+      </div>
+
+    </div>
     
     
 
