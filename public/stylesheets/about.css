@@ -1,0 +1,17 @@
+.about_frame {
+  padding-top: 100px;
+  font-family: 'Fira Code', monospace;
+  color: rgb(24, 230, 203);
+  font-size: 15px;
+
+}
+
+.about_type_2 {
+  transform-origin: 0 0;
+  transform: rotate(-20deg);
+  font-family: 'Kavivanar', cursive;
+  font-size: 20px;
+  color: rgb(190, 190, 190);
+  font-weight: bolder;
+}
+

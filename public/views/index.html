@@ -2,40 +2,142 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="stylesheets/index.css">
     <link rel="stylesheet" href="stylesheets/typing_animation.css">
+    <link rel="stylesheet" href="stylesheets/sections.css">
+    <link rel="stylesheet" href="stylesheets/about.css">
+    <link rel="stylesheet" href="stylesheets/job_toggle.css">
+
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script defer src="bio_text_animation.js" type="module"></script>
     <script defer src="typing_animation.js" type="module"></script>
-    
+    <script defer src="job_toggle.js" type="module"></script>
+    <script defer src="project_list.js" type="module"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap">
+
     <title>Portfolio</title>
   </head>
 
   <body>
 
-    <div class="title">
-      <h1>Hi, I'm Tim Turvey</h1>
-      <p>I'm a software developer and </p>
-
-      <div id="intro_text" class="intro_text">
-        <p></p>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+      <a href="#" class="navbar-brand">TT</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a href="#" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Experience</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
       </div>
-      <div class="container">
-        <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-      </div>
 
+    </nav>
 
-    </div>
+    <section class="left_column">
 
-    <div class="projects_container">
-      <div class="projects card">
-        Project A
+    </section>
+    <section class="right_column">
 
-      </div>
+    </section>
 
-    </div>
+    <main class="page_container">
+      <section class="hero_section">
+        <div class="intro_bio_type_1">
+          Hi, my name is
+        </div>
+        <div class="intro_bio_type_2">
+          Tim Turvey.
+        </div>
+        
+        <div class="intro_bio_subsection">
+            <span class="intro_bio_type_1">I'm a </span>
+            <span class="intro_bio_type_3">software developer</span>
+        </div>   
+        <div class="intro_bio_subsection">
+            <span class="intro_bio_type_1">based in </span>
+            <span class="intro_bio_type_4">London</span>
+            <span class="intro_bio_type_1"> and </span>
+            <!-- <p> and a <span id="intro_text" class="intro_text"></span></p> -->
+            <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+        </div>
+      </section>
+
+      <section class="about_section">
+        <div class="about_frame">
+          <h1>About</h1>
+          <p>
+            I'm a software developer with 1 year of experience. I've graduated from a top coding boot camps in London, Makers Acadamy. From September to December in 2021, I was pair programming to create many different web apps ranging from a Twitter clone to a Rock, Paper and Scissors game. The work I'm most proud of though can be found in the projects section of this website!
+          </p>
+          <p>
+            I'm able to learn new programming languages fast therefore I usually refer to myself as tech-agnostic however Ruby and JavaScript are my current weapons of choice. Whatever the tools, I enjoy bringing ideas to life.
+          </p>
+          <p>
+            Away from the keyboard I could be doing any number of things. I'm pretty into functional fitness and I like to occasionally compete in individual and team competitions.
+          </p>
+          <p>
+            Currently, I’m building personal projects to keep up and enhance my technical skills.
+            <span class="intro_bio_type_1">
+              
+            
+              ...I'm also seeking employment opportunities so please do reach out if you know of any relevant roles.
+            </span>
+          </p>
+          <div class="about_type_2">
+            if (jobForTim === true) { 
+            </br>
+              "Please click the toggle"
+            </br>
+            }
+          </div>
+
+          <label class="toggle">
+            <span class="onoff">
+              Waiting...
+            </span>
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+
+        </div>
+          
+      </section>
     
-    
+      <section class="projects_section">
+        
+        
+
+      </section>
+
+
+    </main>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
   </body>
 </html>

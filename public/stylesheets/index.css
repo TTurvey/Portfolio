@@ -1,5 +1,40 @@
-/* .intro_text {
-  font-size: 10px;
+.intro_bio_type_1 {
+  font-family: 'Fira Code', monospace;
+  color: rgb(24, 230, 203);
+  font-size: 20px;
+}
 
+.intro_bio_type_2 {
+  font-family: 'Helvetica';
+  color: rgb(191, 200, 218);
+  font-size: 50px;
+  font-weight: 700;
+}
 
-} */
+.intro_bio_type_3 {
+  font-family: 'Fira Code', monospace;
+  color: rgb(24, 230, 203);
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.intro_bio_type_4 {
+  font-family: 'Fira Code', monospace;
+  color: rgb(24, 230, 203);
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.intro_bio_subsection{
+  font-family: 'Fira Code', monospace;
+  color: rgb(24, 230, 203);
+  font-size: 20px;
+}
+
+.intro_text {
+  font-family: 'Fira Code', monospace;
+  color: rgb(123, 136, 161);
+  font-size: 30px;
+  font-weight: 400;
+}
+
