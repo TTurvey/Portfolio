@@ -1,5 +1,7 @@
 .toggle {
   position: relative;
+  left:50%;
+  top: 5px;
 }
 
 .toggle input {

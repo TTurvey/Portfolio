@@ -1,28 +1,28 @@
 var projectArray = [
   {
   name : "Minesweeper",
-  description : "A web based Minesweeper game.",
+  description : "A web based Minesweeper game that implements recursion and an algorithm for the Fisher-Gates shuffle.",
   date : "15/02/2022",
   techUsed : "JavaScript, HTML, CSS",
   imageSource : "./images/minesweeper.png"
   },
   {
     name : "Chitter",
-    description : "A clone of the popular Twitter app...",
+    description : "A clone of the popular Twitter app that has user authentication and uses PostgreSQL databases for data stroage and retrieval.",
     date : "15/01/2022",
     techUsed : "JavaScript, HTML, CSS",
     imageSource : "./images/minesweeper.png"
   },
   {
     name : "Bar.io",
-    description : "A bar finder app...",
+    description : "Collaborated in a team of 4 developers to engineer a bar finder web app. It uses Google Maps, Places and Images API’s to provide users with the top 5 rated bars within a selectable walking distance of the user’s location. The backend was built using Node.js and Express.js to create a RESTful API and React was used on the frontend. Unit testing was carried out with Jest by TDD.",
     date : "10/12/2021",
     techUsed : "React, JavaScript, HTML, CSS, API's(Google Maps, Places, Geocoding)",
     imageSource : "./images/minesweeper.png"
   },
   {
-    name : "Exploring new project ideas",
-    description : "I'm working on it...",
+    name : "Exploring ideas",
+    description : "New projects coming soon!",
     date : "25/03/2022",
     techUsed : "",
     imageSource : "./images/clouds.avif"

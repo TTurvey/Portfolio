@@ -6,8 +6,9 @@
 }
 
 .about_type_2 {
-  transform-origin: 0 0;
-  transform: rotate(-20deg);
+  width: auto;
+  /* transform-origin: 0 0; */
+  /* transform: rotate(-20deg); */
   font-family: 'Kavivanar', cursive;
   font-size: 20px;
   color: rgb(190, 190, 190);
