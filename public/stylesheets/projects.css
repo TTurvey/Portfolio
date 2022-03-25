@@ -69,7 +69,7 @@
   color: #202020;
 }
 
-.project_card .content .top-text p{
+.project_card .content .top-text .sub-title{
   font-size: 18px;
   font-weight: 500;
   color: red;
