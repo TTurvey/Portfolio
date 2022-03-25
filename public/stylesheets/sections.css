@@ -42,25 +42,10 @@ main {
 }
 
 .projects_section {
-  display: flex; 
-  flex-direction: row; 
-  flex-wrap: wrap;
+  padding-top: 100px;
   min-height: 100vh;
   background-color: blue;
 }
 
-.project_card {
-  height: 10rem;
-  width: 150px;
-  margin: 10px;
-  background-color: rgb(208, 255, 0);
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  text-decoration: none;
-  border: 0.25rem solid;
-  border-color: black;
-  
- 
-  
-}
+
+

@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Code', monospace;
+}
+
+.projects_frame{
+  height: 100%;
+  padding: 0 40px;
+  align-items: center;
+  display: flex;  
+  flex-direction: row; 
+  flex-wrap: wrap;  
+  justify-content: center;
+} 
+
+.project_card{
+  position: relative;
+  height: 470px;
+  max-width: 45%;
+  display: block;
+  background: white;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+  transition: 0.4s linear;
+  margin: 20px 20px;
+}
+
+.project_card:hover{
+  box-shadow: 0px 1px 35px 0px rgba(0,0,0,0.3);
+  height: 470px;
+}
+
+.project_card .image{
+  background: black;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.project_card:hover .image img{
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.project_card .content{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: white;
+  text-align: center;
+  /* padding: 20px 30px; */
+}
+
+.project_card .content .top-text{
+  padding: 5px;
+}
+
+.project_card .content .top-text .title{
+  font-size: 25px;
+  font-weight: 600;
+  color: #202020;
+}
+
+.project_card .content .top-text p{
+  font-size: 18px;
+  font-weight: 500;
+  color: red;
+  line-height: 1.8em;
+}
+
+.project_card .content .bottom-text{
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  background: white;
+  opacity: 0;
+  font-size: 18px;
+  /* display: none; */
+  visibility: hidden;
+  height: 0px;
+}
+
+.content:hover .bottom-text{
+  opacity: 1;
+  visibility: visible;
+  height: 100%
+}
+
+.project_card .content .bottom-text .text{
+  text-align: justify;
+  line-height: 1.8em;
+  font-family: 'Fira Code', monospace;
+}
+.project_card .content .bottom-text .btn{
+  margin: 10px 0;
+  text-align: left;
+}
+
+.project_card .bottom-text .btn a{
+  text-decoration: none;
+  background: #e74c3c;
+  color: #f2f2f2;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.project_card .bottom-text .btn a:hover{
+  transform: scale(0.9);
+  background: rgb(214, 92, 92);
+} 
+
+@media screen and (max-width: 978px) {
+  .projects_frame{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .project_card{
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}
