@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="stylesheets/about.css">
     <link rel="stylesheet" href="stylesheets/job_toggle.css">
     <link rel="stylesheet" href="stylesheets/projects.css">
+    <link rel="stylesheet" href="stylesheets/contact.css">
     <link rel="stylesheet" href="stylesheets/footer.css">
 
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -17,6 +18,10 @@
     <script defer src="typing_animation.js" type="module"></script>
     <script defer src="job_toggle.js" type="module"></script>
     <script defer src="project_list.js" type="module"></script>
+
+    <!-- Google map API -->
+    <!-- <script type='text/javascript' src='config.js'></script> -->
+    <script defer src="maps.js" type="module"></script>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -129,6 +134,35 @@
       <section class="contact_section">
         <h1>Contact</h1>
         <div class="contact_frame">
+          
+          <div class="contact_form">
+            <form action="https://formsubmit.co/tim.turvey@outlook.com" method="POST">
+              <input class="email_address_box" type="email" name="email" placeholder="Email address" required>
+              <input class="email_name_box" type="text" name="name" placeholder="Name" required>
+              <input class="email_subject_box" type="text" name="subject" placeholder="Subject" required>
+              <input class="email_message_box" type="text" name="message" placeholder="Write your message here" required>
+              
+              <button class="email_submit_button" type="submit">Send</button>
+
+              <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+            </form>
+          </div>
+
+
+          <img src="https://maps.googleapis.com/maps/api/staticmap?center=London&zoom=12&size=300x400&key=${API_KEY}">
+
+         <!-- <iframe
+            width="600"
+            height="450"
+            style="border:0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed/v1/place?key=${API_KEY}
+              &q=London">
+          </iframe>  -->
+
+
         </div>
       </section>
     </main>

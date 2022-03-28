@@ -1,5 +1,10 @@
+// Anything that is in .env becomes an environment variable
+// require('dotenv').config();
+
+
 //Import the dependencies.
 const express = require('express');
+const { request } = require('http');
 
 //Instantiate an express app.
 const app = express();
@@ -17,3 +22,8 @@ app.listen(port, () => {
 //static folder
 app.use(express.static('public'));
 app.use('/', require('./public/routes/index.js'));
+
+
+
+  
+  

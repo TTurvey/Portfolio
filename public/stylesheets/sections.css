@@ -45,23 +45,21 @@ main {
 }
 
 .projects_section {
-  padding-top: 100px;
+  padding-top: 50px;
   min-height: 100vh;
   background-color: rgb(19, 27, 44);
   border: solid 5px white;
 }
 
 .experience_section {
-  padding-top: 100px;
+  padding-top: 50px;
   min-height: 100vh;
   background-color: rgb(19, 27, 44);
   border: solid 5px white;
 }
 
 .contact_section {
-  display: flex;  
-  flex-direction: row ;
-  flex-wrap: wrap;
+  padding-top: 50px;
   min-height: 100vh;
   background-color: rgb(19, 27, 44);
   border: solid 5px white;
