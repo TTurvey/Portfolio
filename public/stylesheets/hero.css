@@ -1,0 +1,49 @@
+.intro_part_1 {
+  display:inline-block;
+}
+
+.intro_part_2 {
+  display:inline-block;
+}
+
+.intro_text_type_1 {
+  font-family: 'Fira Code', monospace;
+  color: rgb(24, 230, 203);
+  font-size: 15px;
+}
+
+.intro_text_type_2 {
+  font-family: 'Helvetica';
+  color: rgb(191, 200, 218);
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.intro_text_type_3 {
+  font-family: 'Fira Code', monospace;
+  color: rgb(24, 230, 203);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.intro_text_type_4 {
+  font-family:Verdana, sans-serif;
+  color: rgb(104, 117, 148);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.intro_text_type_5 {
+  font-family:Verdana, sans-serif;
+  color: rgb(24, 230, 203);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.typed_text {
+  font-family: 'Fira Code', monospace;
+  color: rgb(24, 230, 203);
+  font-size: 20px;
+  font-weight: 300;
+}
+

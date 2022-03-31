@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/hero.css">
     <link rel="stylesheet" href="stylesheets/typing_animation.css">
     <link rel="stylesheet" href="stylesheets/sections.css">
     <link rel="stylesheet" href="stylesheets/about.css">
@@ -46,17 +46,20 @@
       <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                  <a href="#" class="nav-link">About</a>
+                  <a href="#about" class="nav-link">About</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Experience</a>
+                <a href="#experience" class="nav-link">Experience</a>
               </li>
               <li class="nav-item">
-                  <a href="#" class="nav-link">Projects</a>
+                  <a href="#projects" class="nav-link">Projects</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
-            </li>
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">CV</a>
+              </li>
           </ul>
       </div>
 
@@ -70,27 +73,30 @@
 
     <main class="page_container">
       <section class="hero_section">
-        <div class="intro_bio_type_1">
-          Hi, my name is
+
+        <div class="intro_part_1">
+          <span class="intro_text_type_1">Hi, my name is </span>
+          <br>
+          <span class="intro_text_type_2">Tim Turvey. </span>
         </div>
-        <div class="intro_bio_type_2">
-          Tim Turvey.
+
+        <div class="intro_part_2">
+          <span class="intro_text_type_3">I'm a software developer based in London</span>
+          <br>
+          <span class="intro_text_type_3">and </span>
+           <!-- <p> and a <span id="intro_text" class="intro_text"></span></p> -->
+          <span class="typed_text"></span><span class="cursor">&nbsp;</span>
         </div>
-        
-        <div class="intro_bio_subsection">
-            <span class="intro_bio_type_1">I'm a </span>
-            <span class="intro_bio_type_3">software developer</span>
-        </div>   
-        <div class="intro_bio_subsection">
-            <span class="intro_bio_type_1">based in </span>
-            <span class="intro_bio_type_4">London</span>
-            <span class="intro_bio_type_1"> and </span>
-            <!-- <p> and a <span id="intro_text" class="intro_text"></span></p> -->
-            <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+         
+        <div class="intro_part_3">
+          <p>
+            <span class="intro_text_type_4">Currently, I’m open to job opportunities and I'm focused on improving my skillset by building <a href="#projects" class="intro_text_type_5">personal projects. </a></span>
+          </p>
         </div>
+
       </section>
 
-      <section class="about_section">
+      <section id="about" class="about_section">
         <div class="about_frame">
           <h1>About</h1>
           <p>
@@ -119,19 +125,20 @@
           
       </section>
     
-      <section class="projects_section">
+      <section id="projects" class="projects_section">
+        
         <h1>Projects</h1>
         <div class="projects_frame">
         </div>
       </section>
 
-      <section class="experience_section">
+      <section id="experience" class="experience_section">
         <h1>Experience</h1>
         <div class="experience_frame">
         </div>
       </section>
 
-      <section class="contact_section">
+      <section id="contact" class="contact_section">
         <h1>Contact</h1>
         <div class="contact_frame">
           

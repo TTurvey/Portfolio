@@ -1,4 +1,4 @@
-const typedTextSpan = document.querySelector(".typed-text");
+const typedTextSpan = document.querySelector(".typed_text");
 const cursorSpan = document.querySelector(".cursor");
 
 const textArray = ['a skier ⛷️', 'a music lover 🎶', 'an explorer 🗺️','an optimist 🥛', 'a film fan 🎥', 'a concertgoer 🎸', 'a melophile 🔊', 'a crossfitter 🏋️‍♂️🏃🏊‍♂️', 'a drummer 🥁', 'an ex-auditor 🔎', 'an ex-accountant 🧾', 'a cynophile 🐾', 'a cinephile 🎞️', 'a dog lover 🐕', 'a autodidact'];
@@ -10,7 +10,9 @@ let charIndex = 0;
 
 function type() {
   if (charIndex < textArray[textArrayIndex].length) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    if(!cursorSpan.classList.contains("typing")){
+      cursorSpan.classList.add("typing")
+    };
     typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
     charIndex++;
     setTimeout(type, typingDelay);
@@ -23,7 +25,9 @@ function type() {
 
 function erase() {
 	if (charIndex > 0) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    if(!cursorSpan.classList.contains("typing")) {
+      cursorSpan.classList.add("typing")
+    };
     typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
     charIndex--;
     setTimeout(erase, erasingDelay);
