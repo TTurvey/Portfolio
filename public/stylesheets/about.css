@@ -1,17 +1,28 @@
 .about_frame {
-  padding-top: 100px;
-  font-family: 'Fira Code', monospace;
+  padding-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
   color: rgb(24, 230, 203);
   font-size: 15px;
 }
 
-.about_type_2 {
-  width: auto;
-  /* transform-origin: 0 0; */
-  /* transform: rotate(-20deg); */
-  font-family: 'Kavivanar', cursive;
-  font-size: 20px;
-  color: rgb(190, 190, 190);
-  font-weight: bolder;
+#job_question {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  border: solid 2px rgb(24, 230, 203);
 }
 
+#job_question_text {
+  display: flex;
+  width: 70%;
+  border-radius: 5px;
+  border: solid 2px rgb(24, 230, 203);
+}
+
+.text_type_7 {
+  font-family: Verdana, sans-serif;
+  color: rgb(123, 136, 165);
+  font-size: 18px;
+}

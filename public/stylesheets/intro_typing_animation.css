@@ -1,28 +1,37 @@
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container p {
-  font-family: 'Fira Code', monospace;
-  color: rgb(24, 230, 203);
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
+.animation_container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  
+}
+
+.animation_container p {
   overflow: hidden;
   margin: 0;
 }
 
-.container p span.cursor {
+.animation_container span.cursor {
   display: inline-block;
   background-color: #ccc;
   width: 3px;
   animation: blink 1s infinite;
 }
 
-.container p span.cursor.typing {
+.animation_container span.cursor.typing {
   animation: none;
+}
+
+.cursor {
+  font-family:  Verdana, sans-serif;
+  color:  rgb(147, 161, 196);
+  font-size: 45px;
+  font-weight: 700;
 }
 
 @keyframes blink {
@@ -32,3 +41,4 @@
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
 }
+

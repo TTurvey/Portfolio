@@ -1,18 +1,54 @@
-#page-wrap {
+body {
+  display: flex;
+  flex-direction: row; 
+}
+
+.column {
+  height: 100%;  /* allows both columns to span the full height of the browser window */
+  display: flex;
+  flex-direction: column;
+}
+
+#left_column{
+  width: 10%;
+  /* flex-shrink: 0; */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#right_column{
+  width: 10%;
+  /* flex-shrink: 0; */
+}
+
+#middle_column{
+  width: 80%;
+  /* flex-shrink: 0; */
+}
+
+
+
+/* .bottom{
+  flex-grow: 1;
+} */
+
+/* #page-wrap {
   width: 600px; 
   margin: 15px auto; 
   position: relative; 
-}
+} */
 
-main {
+ main {
+  display: flex;
   padding-left: 100px;
-  padding-right: 100px;
+  padding-right: 100px; 
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: rgb(19, 27, 44);
-}
+} 
 
-.left_column {
+/* .left_column {
   width: 10%;
   height: 100%;
 }
@@ -20,6 +56,11 @@ main {
 .right_column {
   width: 10%;
   height: 100%;
+} */
+
+.middle_sections{
+  width: 80%;
+  /* height: 100% */
 }
 
 .hero_section {
@@ -30,7 +71,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
-  padding: 0px;
+  padding-top: 100px;
   background-color: rgb(19, 27, 44);
   border: solid 5px white;
 }

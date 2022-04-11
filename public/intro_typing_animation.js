@@ -1,10 +1,10 @@
-const typedTextSpan = document.querySelector(".typed_text");
+const typedTextSpan = document.querySelector("#typed_text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ['a skier ⛷️', 'a music lover 🎶', 'an explorer 🗺️','an optimist 🥛', 'a film fan 🎥', 'a concertgoer 🎸', 'a melophile 🔊', 'a crossfitter 🏋️‍♂️🏃🏊‍♂️', 'a drummer 🥁', 'an ex-auditor 🔎', 'an ex-accountant 🧾', 'a cynophile 🐾', 'a cinephile 🎞️', 'a dog lover 🐕', 'a autodidact'];
+const textArray = ['an ex-accountant 💻', 'an autodidact 📚', 'a film fan 🎥', 'a music lover 🔊', 'an explorer 🗺️','an optimist 🥛', 'a crossfitter 🏋️‍♂️', 'a drummer 🥁', 'a skier ⛷️', 'an ex-auditor 🔎'];
 const typingDelay = 100;
 const erasingDelay = 100;
-const newTextDelay = 2000; // Delay between current and next text
+const newTextDelay = 4000; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 

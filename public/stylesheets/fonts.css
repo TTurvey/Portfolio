@@ -1,0 +1,40 @@
+.text_type_1 {
+  font-family: 'Fira Code', monospace;
+  color: rgb(24, 230, 203);
+  font-size: 20px;
+}
+
+.text_type_2 {
+  font-family: 'Helvetica';
+  color: rgb(203, 218, 243);
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.text_type_3 {
+  font-family:  Verdana, sans-serif;
+  color:  rgb(147, 161, 196);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.text_type_4 {
+  font-family: Verdana, sans-serif;
+  color:  rgb(203, 218, 243);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.text_type_5 {
+  font-family: Verdana, sans-serif;
+  color: rgb(104, 117, 148);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.text_type_6 {
+  font-family: Verdana, sans-serif;
+  color: rgb(24, 230, 203);
+  font-size: 20px;
+  font-weight: 300;
+}

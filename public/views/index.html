@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="stylesheets/hero.css">
-    <link rel="stylesheet" href="stylesheets/typing_animation.css">
     <link rel="stylesheet" href="stylesheets/sections.css">
+    <link rel="stylesheet" href="stylesheets/fonts.css">
+    <link rel="stylesheet" href="stylesheets/hero.css">
+    <link rel="stylesheet" href="stylesheets/intro_typing_animation.css">
     <link rel="stylesheet" href="stylesheets/about.css">
     <link rel="stylesheet" href="stylesheets/job_toggle.css">
     <link rel="stylesheet" href="stylesheets/projects.css">
+    <link rel="stylesheet" href="stylesheets/experience2.css">
     <link rel="stylesheet" href="stylesheets/contact.css">
     <link rel="stylesheet" href="stylesheets/footer.css">
 
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script defer src="bio_text_animation.js" type="module"></script>
-    <script defer src="typing_animation.js" type="module"></script>
+    <!-- <script defer src="intro_emoji_animation.js" type="module"></script> -->
+    <script defer src="intro_typing_animation.js" type="module"></script>
     <script defer src="job_toggle.js" type="module"></script>
     <script defer src="project_list.js" type="module"></script>
-
+    
     <!-- Google map API -->
     <!-- <script type='text/javascript' src='config.js'></script> -->
     <script defer src="maps.js" type="module"></script>
@@ -38,157 +40,280 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
-      <a href="#" class="navbar-brand">TT</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarMenu">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a href="#about" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#experience" class="nav-link">Experience</a>
-              </li>
-              <li class="nav-item">
-                  <a href="#projects" class="nav-link">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">CV</a>
-              </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+        <a href="#" class="navbar-brand">TT</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">CV</a>
+                </li>
+            </ul>
+        </div>
+
+      </nav>
+    </header>
+
+    <main>
+
+      <div id="left_column" class="column">
+        <div class="bottom"></div>
       </div>
 
-    </nav>
-
-    <section class="left_column">
-    </section>
-
-    <section class="right_column">
-    </section>
-
-    <main class="page_container">
-      <section class="hero_section">
-
-        <div class="intro_part_1">
-          <span class="intro_text_type_1">Hi, my name is </span>
-          <br>
-          <span class="intro_text_type_2">Tim Turvey. </span>
-        </div>
-
-        <div class="intro_part_2">
-          <span class="intro_text_type_3">I'm a software developer based in London</span>
-          <br>
-          <span class="intro_text_type_3">and </span>
-           <!-- <p> and a <span id="intro_text" class="intro_text"></span></p> -->
-          <span class="typed_text"></span><span class="cursor">&nbsp;</span>
-        </div>
-         
-        <div class="intro_part_3">
-          <p>
-            <span class="intro_text_type_4">Currently, I’m open to job opportunities and I'm focused on improving my skillset by building <a href="#projects" class="intro_text_type_5">personal projects. </a></span>
-          </p>
-        </div>
-
-      </section>
-
-      <section id="about" class="about_section">
-        <div class="about_frame">
-          <h1>About</h1>
-          <p>
-            I'm a software developer with 1 year of experience. I've graduated from a top coding boot camps in London, Makers Acadamy. From September to December in 2021, I was pair programming to create many different web apps ranging from a Twitter clone to a Rock, Paper and Scissors game. The work I'm most proud of though can be found in the projects section of this website!
-          </p>
-          <p>
-            I'm able to learn new programming languages fast therefore I usually refer to myself as tech-agnostic however Ruby and JavaScript are my current weapons of choice. Whatever the tools, I enjoy bringing ideas to life. Currently, I’m building personal projects to keep up and enhance my technical skills.
-          </p>
-          <p>
-            Away from the keyboard I could be doing any number of things. I'm pretty into functional fitness and I like to occasionally compete in individual and team competitions.
-          </p>
-          <p>
-          <div class="about_type_2">
-            <p>I'm actively seeking employment opportunities. Have an opportunity in mind? Click here...</p>
-          </div>
-
-          <label class="toggle">
-            <span class="onoff">
-              Waiting...
-            </span>
-            <input type="checkbox" />
-            <span class="slider round"></span>
-          </label>
-
-        </div>
-          
-      </section>
-    
-      <section id="projects" class="projects_section">
+      <div id="middle_column" class="column">
         
-        <h1>Projects</h1>
-        <div class="projects_frame">
-        </div>
-      </section>
+        <section class="hero_section">
 
-      <section id="experience" class="experience_section">
-        <h1>Experience</h1>
-        <div class="experience_frame">
-        </div>
-      </section>
-
-      <section id="contact" class="contact_section">
-        <h1>Contact</h1>
-        <div class="contact_frame">
-          
-          <div class="contact_form">
-            <form action="https://formsubmit.co/tim.turvey@outlook.com" method="POST">
-              <input class="email_address_box" type="email" name="email" placeholder="Email address" required>
-              <input class="email_name_box" type="text" name="name" placeholder="Name" required>
-              <input class="email_subject_box" type="text" name="subject" placeholder="Subject" required>
-              <input class="email_message_box" type="text" name="message" placeholder="Write your message here" required>
-              
-              <button class="email_submit_button" type="submit">Send</button>
-
-              <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
-            </form>
+          <div class="intro_part_1">
+            <p class="text_type_1">Hi, my name is</p>
+            <p class="text_type_2">Tim Turvey.</p>
           </div>
 
+          <div class="intro_part_2">
+            <p>
+              <span class="text_type_4">Software developer</span>
+              <span class="text_type_3">based in London</span>
+            </p>
 
-          <img src="https://maps.googleapis.com/maps/api/staticmap?center=London&zoom=12&size=300x400&key=${API_KEY}">
+            <div class="animation_container">
+              <p>
+                <span class="text_type_3">and </span>
+                <span id="typed_text" class="text_type_3"></span>
+                <span class="cursor">|</span>
+              </p>
+              <!-- <span id="intro_emoji" class="intro_emoji"></span> -->
+            </div>
+            
+          </div>
+          
+          <div class="intro_part_3">
+            <p>
+              <span class="text_type_5">Currently, I’m open to job opportunities and I'm focused on improving my skillset through building <a href="#projects" class="text_type_6">personal projects. </a></span>
+            </p>
+          </div>
 
-         <!-- <iframe
-            width="600"
-            height="450"
-            style="border:0"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed/v1/place?key=${API_KEY}
-              &q=London">
-          </iframe>  -->
+        </section>
+
+        <section id="about" class="about_section">
+          
+          <div class="about_frame">
+            <h1>About</h1>
+            <p class="text_type_7">
+              I'm a software developer with 1 year of experience. I've graduated from a top coding boot camps in London, Makers Acadamy. From September to December in 2021, I was pair programming to create many different web apps ranging from a Twitter clone to a Rock, Paper and Scissors game. The work I'm most proud of though can be found in the projects section of this website!
+            </p>
+            <p class="text_type_7">
+              I'm able to learn new programming languages fast therefore I usually refer to myself as tech-agnostic however Ruby and JavaScript are my current weapons of choice. Whatever the tools, I enjoy bringing ideas to life. Currently, I’m building personal projects to keep up and enhance my technical skills.
+            </p>
+            <p class="text_type_7">
+              Away from the keyboard I could be doing any number of things. I'm pretty into functional fitness and I like to occasionally compete in individual and team competitions.
+            </p>
+          
+            <div id="job_question" class="text_type_7">
+              <div id="job_question_text" class="text_type_8">
+                I'm actively seeking employment opportunities. Have an opportunity in mind? Click here...
+              </div>
+              <div class="job_toggle">
+                <label class="toggle">
+                  <span class="onoff">
+                    Waiting...
+                  </span>
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+            
+        </section>
+      
+        <section id="projects" class="projects_section">
+          
+          <h1>Projects</h1>
+          <div class="projects_frame">
+          </div>
+        </section>
+
+        <script src="experience.js" type="module"></script>
+
+        <section id="experience" class="experience_section">
+          <h1>Experience</h1>
+          <div class="experience_frame">
+
+            <div class="tabs">
+              <nav>
+                <a>Makers Academy</a>
+                <a>Mazars</a>
+                <a>BDO</a>
+                <a>RSK Buisness Solutions</a>
+              </nav>
+
+              <div class="content">
+                <div class="heading">Student <span class="at_sign">@ Makers Academy</span></div>
+                <div class="sub-heading">Coding Boot Camp in London</div>
+                <div class="timeline">Sep 2021 - Dec 2021</div>
+                <ul>
+                  <li>Developed 18 user-friendly web applications primarily in Ruby and JavaScript.</li>
+                  <li>Self-led learning to become tech-agnostic and able to learn new languages fast.</li>
+                  <li>Implemented test-driven development (TDD) with unit testing to ensure code optimisation.</li>
+                  <li>Collaborated in Agile teams with a focus on XP values, CI/CD and Git for work management.</li>
+                  <li>Pair programmed with other developers using OOP languages.</li>
+                  <li>Retrieved information from APIs and SQL databases.</li>
+                  <li>Used Trello for user story ticketing, assigning work and tracking project progress.</li>
+                </ul>
+              </div>
+
+              <div class="content">
+                <div class="heading">Audit Senior <span class="at_sign">@ Mazars</span></div>
+                <div class="sub-heading">Top 10 Largest Accountancy Firm in the World</div>
+                <div class="timeline">Jul 2020 - August 2021</div>
+                <ul>
+                  <li>Analysed year-on-year performance of listed companies to manage areas of higher risk.</li>
+                  <li>Tested financial data reliably with attention to detail to conclude whether the financial statements were materially misstated.</li>
+                  <li>Kept client directors up-to-date with issues regarding the audit and the required information.</li>
+                  <li>Mentored junior staff by managing their workflow and assisting in on-the-job learning.</li>
+                  <li>Prioritised workloads and managed time for multiple clients simultaneously.</li>
+                  <li>Clients included...</li>
+                </ul>
+              </div>
+
+              <div class="content">
+                <div class="heading">Corporate Auditor <span class="at_sign">@ BDO</span></div>
+                <div class="sub-heading">Top 5 Largest Accountancy Firm in the World</div>
+                <div class="timeline">Jan 2018 - Jul 2020</div>
+
+                <ul>
+                  <li>Self-led study outside of work hours to become part-qualified with the ACA qualification.</li>
+                  <li>Collaborated in teams on large corporate clients across a range of industries including charities, construction, manufacturing, real estate, retail, shipping and professional services.</li>
+                  <li>Reviewed client assumptions on financial forecasts to ascertain whether they were reasonable.</li>
+                  <li>Understood commercial issues of clients to form opinions on whether they were a going concern.</li>
+                  <li>Clients included...</li>
+                </ul>
+              </div>
+
+              <div class="content">
+                <div class="heading">Risk Consultant <span class="at_sign">@ RSK Buisness Solutions</span></div>
+                <div class="sub-heading">IT and Railway Consultancy</div>
+                <div class="timeline">Jan 2018 - Dec 2017</div>
+                <ul>
+                  <li>Consulted on railway signalling across the UK by analysing the risk of train crashes.</li>
+                  <li>Improved data analysis efficiency by teaching colleagues how to use MS Excel pivot tables.</li>
+                </ul>
+              </div>
+
+            </div>
+
+            
+            <!-- <div class="content">
+              <div class="content">
+                tab 1
+              </div> 
+              <div class="content">
+                tab 2
+              </div> 
+              <div class="content">
+                tab 3
+              </div> 
+              <div class="content">
+                tab 4
+              </div> 
+            </div> -->
 
 
-        </div>
-      </section>
+
+
+
+
+
+
+          </div>
+        </section>
+
+        <section id="contact" class="contact_section">
+          <h1>Contact</h1>
+          <div class="contact_frame">
+            
+            <div class="contact_form">
+              <form action="https://formsubmit.co/tim.turvey@outlook.com" method="POST">
+                <input class="email_address_box" type="email" name="email" placeholder="Email address" required>
+                <input class="email_name_box" type="text" name="name" placeholder="Name" required>
+                <input class="email_subject_box" type="text" name="subject" placeholder="Subject" required>
+                <input class="email_message_box" type="text" name="message" placeholder="Write your message here" required>
+                
+                <button class="email_submit_button" type="submit">Send</button>
+
+                <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+              </form>
+            </div>
+
+
+            <img src="https://maps.googleapis.com/maps/api/staticmap?center=London&zoom=12&size=300x400&key=${API_KEY}">
+
+          <!-- <iframe
+              width="600"
+              height="450"
+              style="border:0"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed/v1/place?key=${API_KEY}
+                &q=London">
+            </iframe>  -->
+
+
+          </div>
+        </section>
+
+      </div>
+
+      <div id="right_column" class="column">
+        <div class="bottom"></div>
+      </div>
+
     </main>
 
-    <footer>
+    <!-- <footer>
       <section class="footer_section">
         <div class="icons">
           <a href="https://www.linkedin.com/in/timturvey"> <i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/TTurvey"> <i class="fab fa-github"></i></a>
         </div>
       </section>
-    </footer>
+    </footer> -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous">
+    </script>
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous">
+    </script>
+    
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous">
+    </script>
 
   </body>
 </html>

@@ -1,4 +1,5 @@
 .toggle {
+  
   position: relative;
   left:50%;
   top: 5px;
@@ -13,10 +14,10 @@
 
 .toggle .onoff {
   color: #fff;
-  font-size: 2em;
+  font-size: 1em;
   text-align: center;
   display: block;
-  font-family: 'Kavivanar', cursive;
+  font-family: Verdana, sans-serif;
 }
 
 .slider {
