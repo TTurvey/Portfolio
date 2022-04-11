@@ -1,5 +1,22 @@
+
+.hero_section {
+  height: 90vh;
+  width: 100%;
+  padding-top: 15vh;
+  /* margin: auto; */
+  /* border: solid 1px white; */
+}
+
+.hero_title_text{
+  display: flex;
+  flex-direction: column;
+  /* margin: auto; */
+  height: 35vw;
+  /* border: white solid 2px; */
+}
+
 .intro_part_1 {
-  display:inline-block;
+  /* display:inline-block; */
 }
 
 .intro_part_1 p{
@@ -8,7 +25,7 @@
 }
 
 .intro_part_2 {
-  display:inline-block;
+  /* display:inline-block; */
   padding-bottom: 50px;
 }
 
@@ -22,3 +39,29 @@
 }
 
 
+@media screen and (min-width: 900px) {
+  .hero_title_text {
+    height: 315px;
+  }
+  .text_type_3 {
+    font-size: 50px;
+  }
+  .text_type_4 {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero_section {
+    padding-top: 100px;
+  }
+  
+  .animation_container {
+    display: none;
+  }
+
+  .hero_title_text {
+    height: max-content;
+  }
+
+}

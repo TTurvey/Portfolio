@@ -1,83 +1,110 @@
 var projectArray = [
   {
-  name : "Minesweeper",
-  description : "A web based Minesweeper game that implements recursion and an algorithm for the Fisher-Gates shuffle.",
+  title : "Minesweeper",
+  description : "A web app of the popular computer game. Javascript methods such as onclick events provided a way to maniplate the DOM upon user interaction. Implementing recursion allowed the automatic revealing of empty squares. Games are generated with the Fisher-Yates shuffle algorithm to ensure randomization and efficiency.",
   date : "15/02/2022",
-  techUsed : "JavaScript, HTML, CSS",
-  imageSource : "./images/minesweeper.png"
+  techUsed : ["JavaScript", "Node.js", "Express", "CSS"],
+  imageSource : "./images/clouds.avif",
+  githubLinks : ["https://github.com/TTurvey/minesweeper-javascript"]
   },
   {
-    name : "Chitter",
+    title : "Chitter",
     description : "A clone of the popular Twitter app that has user authentication and uses PostgreSQL databases for data stroage and retrieval.",
     date : "15/01/2022",
-    techUsed : "JavaScript, HTML, CSS",
-    imageSource : "./images/minesweeper.png"
+    techUsed : ["JavaScript", "HTML", "CSS"],
+    imageSource : "./images/clouds.avif",
+    githubLinks : ["https://github.com/TTurvey/chitter-challenge"]
   },
   {
-    name : "Bar.io",
+    title : "Bar.io",
     description : "Collaborated in a team of 4 developers to engineer a bar finder web app. It uses Google Maps, Places and Images API’s to provide users with the top 5 rated bars within a selectable walking distance of the user’s location. The backend was built using Node.js and Express.js to create a RESTful API and React was used on the frontend. Unit testing was carried out with Jest by TDD.",
     date : "10/12/2021",
-    techUsed : "React, JavaScript, HTML, CSS, API's(Google Maps, Places, Geocoding)",
-    imageSource : "./images/minesweeper.png"
+    techUsed : ["React", "JavaScript", "HTML", "CSS", "API's(Google Maps, Places, Geocoding)"],
+    imageSource : "./images/nhu-nguyen-IL1qSqEMNBo-unsplash.jpg",
+    githubLinks : ["https://github.com/TTurvey/bar.io-frontend", "https://github.com/TTurvey/bar.io-backend"]
   },
-  {
-    name : "Exploring ideas",
-    description : "New projects coming soon!",
-    date : "25/03/2022",
-    techUsed : "",
-    imageSource : "./images/clouds.avif"
-  }
+  // {
+  //   title : "Exploring ideas",
+  //   description : "New projects coming soon!",
+  //   date : "25/03/2022",
+  //   techUsed : [""],
+  //   imageSource : "./images/clouds.avif",
+  //   githubLinks : [""]
+  // }
 ];
 
 // For each array index, create a project card div and fill with projects details
 for (let i = 0; i < projectArray.length; i++) {
-  const projectsFrame = document.querySelector('.projects_frame');
-  const projectCard = document.createElement('div');
-  projectCard.setAttribute('id', i);
-  projectCard.classList.add('project_card');
+  // selecting the projects section/frame 
+  const projectsFrameEl = document.querySelector('.projects_frame');
 
-  var projectName = projectArray[i]['name'];
+  // creating a projects container
+  const projectContainerEl = document.createElement('div');
+  projectContainerEl.setAttribute('id', i);
+  projectContainerEl.classList.add('project_container');
+
+  // assigning variables to the projects array info
+  var projectName = projectArray[i]['title'];
   var projectDescription = projectArray[i]['description'];
   var projectDate = projectArray[i]['date'];
   var projectTechUsed = projectArray[i]['techUsed'];
   var projectImageSource = projectArray[i]['imageSource'];
+  var githubLinks = projectArray[i]['githubLinks'];
 
+  // creating project image div
+  const projectImageEl = document.createElement('div');
+  projectImageEl.classList.add('project_image');
+  const imgEl = document.createElement('img');
+  imgEl.src = `${projectImageSource}`;
+  projectImageEl.appendChild(imgEl);
 
-  const image = document.createElement('div')
-  image.classList.add('image');
-  const img = document.createElement('img');
-  img.src = `${projectImageSource}`;
+  // creating the project content div
+  const projectContentEl = document.createElement('div');
+  projectContentEl.classList.add('project_content');
 
-  const content = document.createElement('div')
-  content.classList.add('content');
-
-  const topText = document.createElement('div')
-  topText.classList.add('top-text');
-
-  const title = document.createElement('div')
-  title.classList.add('title');
-  title.innerHTML = `${projectName}`;
-
-  const subTitle = document.createElement('div')
-  subTitle.classList.add('sub-title');
-  subTitle.innerHTML = `${projectTechUsed}`;
-
-  const bottomText = document.createElement('div')
-  bottomText.classList.add('bottom-text');
-
-  const description = document.createElement('div')
-  description.classList.add('description');
-  description.innerHTML = `${projectDescription}`;
-
-  image.appendChild(img);
+  // creating the project title div
+  const projectTitleEl = document.createElement('div');
+  projectTitleEl.classList.add('project_title');
+  const textType6 = document.createElement('p');
+  textType6.innerHTML = `${projectName}`;
+  textType6.classList.add('text_type_6');
+  projectTitleEl.appendChild(textType6);
   
-  topText.appendChild(title);
-  topText.appendChild(subTitle);
-  bottomText.appendChild(description);
-  content.appendChild(topText);
-  content.appendChild(bottomText);
+  // creating the project tech div
+  const projectTechEl = document.createElement('div');
+  projectTechEl.classList.add('project_tech');
+  const techList = document.createElement('ul');
+  for (var n = 0; n < projectTechUsed.length; n++) {
+    const item = document.createElement('li');
+    item.classList.add('text_type_12');
+    item.innerHTML = `${projectTechUsed[n]}`;
+    techList.appendChild(item);
+  }
+  projectTechEl.appendChild(techList);
+  
+  // creating the project description div
+  const projectDescriptionEl = document.createElement('div');
+  projectDescriptionEl.classList.add('project_description');
+  projectDescriptionEl.innerHTML = `<p class="text_type_12">${projectDescription}</p>`;
 
-  projectCard.appendChild(image);
-  projectCard.appendChild(content);
-  projectsFrame.appendChild(projectCard);
+  // creating the project links div
+  const projectLinksEl = document.createElement('div');
+  projectLinksEl.classList.add('project_links');
+
+  for (var link = 0; link < githubLinks.length; link++) {
+    const linkEl = document.createElement('a');
+    linkEl.setAttribute('href', `${githubLinks[link]}`);
+    linkEl.innerHTML = '<i class="fab fa-github fa-xl fa-fw"></i>';
+    projectLinksEl.appendChild(linkEl);
+  }
+  
+  projectContentEl.appendChild(projectTitleEl);
+  projectContentEl.appendChild(projectTechEl);
+  projectContentEl.appendChild(projectDescriptionEl);
+  projectContentEl.appendChild(projectLinksEl);
+
+  projectContainerEl.appendChild(projectImageEl);
+  projectContainerEl.appendChild(projectContentEl);
+  projectsFrameEl.appendChild(projectContainerEl);
+
 };

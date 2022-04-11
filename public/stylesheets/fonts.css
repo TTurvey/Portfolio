@@ -1,40 +1,109 @@
 .text_type_1 {
-  font-family: 'Fira Code', monospace;
-  color: rgb(24, 230, 203);
-  font-size: 20px;
+  font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  color: #64FFDA;
+  font-size: 16px;
 }
 
 .text_type_2 {
-  font-family: 'Helvetica';
-  color: rgb(203, 218, 243);
-  font-size: 60px;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", sans-serif;
+  color: #CCD6F6;
+  font-size: 7vw;
   font-weight: 700;
 }
 
 .text_type_3 {
-  font-family:  Verdana, sans-serif;
-  color:  rgb(147, 161, 196);
-  font-size: 40px;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", sans-serif;
+  color:  #8892B0;
+  font-size: 5.25vw;
   font-weight: 700;
 }
 
 .text_type_4 {
-  font-family: Verdana, sans-serif;
-  color:  rgb(203, 218, 243);
-  font-size: 40px;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", sans-serif;
+  color: #CCD6F6;
+  font-size: 5.5vw;
   font-weight: 700;
 }
 
 .text_type_5 {
-  font-family: Verdana, sans-serif;
-  color: rgb(104, 117, 148);
-  font-size: 20px;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", sans-serif;
+  color:  #8892B0;
+  font-size: 18px;
   font-weight: 300;
 }
 
 .text_type_6 {
-  font-family: Verdana, sans-serif;
-  color: rgb(24, 230, 203);
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", sans-serif;
+  color: #64FFDA;
   font-size: 20px;
   font-weight: 300;
+}
+
+.text_type_7 {
+  font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  color: #CCD6F6;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.text_type_8 {
+  font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  color: #64FFDA;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.text_type_9 {
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", sans-serif;
+  color: #64FFDA;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.text_type_10 {
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", sans-serif;
+  color: #64FFDA;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.text_type_11 {
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", sans-serif;
+  color: #CCD6F6;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.text_type_12 {
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", sans-serif;
+  color: #8892B0;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+
+
+@media screen and (min-width: 900px) {
+  .text_type_2 {
+    font-size: 65px;
+  }
+  .text_type_3 {
+    font-size: 50px;
+  }
+  .text_type_4 {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .text_type_2 {
+    font-size: 35px;
+  }
+  .text_type_3 {
+    font-size: 25px;
+  }
+  .text_type_4 {
+    font-size: 25px;
+  }
 }

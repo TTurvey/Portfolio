@@ -8,7 +8,6 @@
   padding: 0;
   margin: 0;
   display: flex;
-  
 }
 
 .animation_container p {
@@ -29,8 +28,8 @@
 
 .cursor {
   font-family:  Verdana, sans-serif;
-  color:  rgb(147, 161, 196);
-  font-size: 45px;
+  /* color:  rgb(147, 161, 196); */
+  /* font-size: 45px; */
   font-weight: 700;
 }
 

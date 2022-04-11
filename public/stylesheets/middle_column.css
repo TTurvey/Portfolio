@@ -1,0 +1,33 @@
+#middle_column{
+  width: 80%;
+  height: max-content;
+}
+
+.middle_section {
+  height: 100vh;
+  border: solid 2px black;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.section_heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid white ;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  #middle_column {
+    width: 100%;
+  }
+  
+}

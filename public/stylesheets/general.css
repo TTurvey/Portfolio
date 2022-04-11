@@ -1,0 +1,21 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(19, 27, 44);
+  /* overflow-x: hidden; needed because hiding the menu on the right side is not perfect,  */
+  /* can't use overflow though as this will prevent the sticky side columns from working.*/
+  box-sizing: border-box;
+}
+
+.column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+}
+
+main {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
